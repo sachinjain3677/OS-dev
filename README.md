@@ -1,7 +1,7 @@
 # OS-dev
 Trying to make a new OS
 
-keeping a workflow 
+Keeping a workflow 
 * followed [this](https://www.whoishostingthis.com/resources/os-development/)
 * followed [this](http://www.brokenthorn.com/Resources/OSDevIndex.html)
 * followed [this](http://www.brokenthorn.com/Resources/OSDev1.html)
@@ -31,3 +31,13 @@ keeping a workflow
     * go to main menu
     * run simulation, press 6
     * follow installation instructions in the emulator window
+ 
+ **Chapter3** [link](http://www.brokenthorn.com/Resources/OSDev3.html)
+ * write the *Boot1.asm* file as in the tutorial
+ * assemble using *nasm* to *Boot1.bin* as it is
+ * Instead of following *VFD* and *PartCopy*, follow [this](https://stackoverflow.com/questions/32893607/how-do-i-write-a-bin-file-512-bytes-to-the-first-sector-sector-0-of-a-floppy)
+  * it uses *dd* to make a virtual floppy image of 1.44MB and writes *Boot1.bin* in the first sector 
+ * follow [this](https://www.cs.princeton.edu/courses/archive/fall06/cos318/precepts/bochs_tutorial.html)
+  * setup configurations for *bochs* and save in file called *custom_config*
+ * run *bochs*, should see *booting from floppy...*
+ * follow *Locating the BIOS ROM* under *Bochs: Testing the bootloader* on the original tutorial if facing error *Bios must end at 0xFFFFF*
