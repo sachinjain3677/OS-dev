@@ -32,7 +32,7 @@ Keeping a workflow
     * run simulation, press 6
     * follow installation instructions in the emulator window
  
- **Chapter3** [link](http://www.brokenthorn.com/Resources/OSDev3.html)
+ **Chapter 3** [link](http://www.brokenthorn.com/Resources/OSDev3.html)
  * write the *Boot1.asm* file as in the tutorial
  * assemble using *nasm* to *Boot1.bin* as it is
  * Instead of following *VFD* and *PartCopy*, follow [this](https://stackoverflow.com/questions/32893607/how-do-i-write-a-bin-file-512-bytes-to-the-first-sector-sector-0-of-a-floppy)
@@ -41,3 +41,16 @@ Keeping a workflow
   * setup configurations for *bochs* and save in file called *custom_config*
  * run *bochs*, should see *booting from floppy...*
  * follow *Locating the BIOS ROM* under *Bochs: Testing the bootloader* on the original tutorial if facing error *Bios must end at 0xFFFFF*
+ 
+ **Chapter 4** [link](http://www.brokenthorn.com/Resources/OSDev4.html)
+ * Segment:offset addressing
+ * Processor modes
+  * Real mode
+  * PMode
+  * Unreal mode
+  * Virtual 8086 mode
+ * Descriptor tables
+ * Routines and interrupts
+  * OEM parameter table
+  * printing text (char + string)
+  * Get RAM 
